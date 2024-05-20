@@ -1,9 +1,9 @@
 <html>
     <head>
-        <link rel="stylesheet" href="src/views/home.css">
-        <link rel="stylesheet" href="buttons.css">
+        <link rel="stylesheet" href="src/views/assets/home.css">
+        <link rel="stylesheet" href="src/views/assets/buttons.css">
 
-        <link rel="icon" type="image/png" href="storage/icon.png">
+        <link rel="icon" type="image/png" href="src/storage/icon.png">
 
         <!-- Archivo Narrow font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
 
         <div id="orange-welcome-div" style="display: flex; padding: 15px 0px 30px; background-color: #FF621F; color: white;">
             <div>
-                <img src="storage/me.jpg" alt='me' />
+                <img src="src/storage/me.jpg" alt='me' />
             </div>
             <div class='title-and-links'>
                 <h1>Salvador Diaz</h1>
@@ -33,7 +33,7 @@
 
                 <div class="section-div">
                     <div>
-                        <img src="/storage/netuy.svg" width='80px' />
+                        <img src="src/storage/netuy.svg" width='80px' />
                     </div>
                     <div>
                         <p><b>Netuy</b> - Full Stack Developer | Mar. 2023 - present (1 year 3 months)</p>
@@ -48,7 +48,7 @@
 
                 <div class="section-div">
                     <div>
-                        <img src="/storage/tcs.png" width='80px' />
+                        <img src="src/storage/tcs.png" width='80px' />
                     </div>
                     <div>
                         <p><b>Tata Consultancy Services</b> - IT Technician | Aug. 2022 - Dec. 2022 (5 months)</p>
@@ -65,7 +65,7 @@
 
                 <div class="section-div">
                     <div>
-                        <img src="/storage/hb.png" width='80px' height='80px' />
+                        <img src="src/storage/hb.png" width='80px' height='80px' />
                     </div>
                     <div>
                         <p><b>Holberton School Uruguay</b> - Software engineering bootcamp | Sep. 2021 - Jul. 2022 (10 months)</p>
@@ -80,7 +80,7 @@
 
                 <div class="section-div">
                     <div>
-                        <img src="/storage/utu.png" width='80px' height='80px' />
+                        <img src="src/storage/utu.png" width='80px' height='80px' />
                     </div>
                     <div>
                         <p><b>Escuela Superior de Informática</b> - Technical Higschool | 2016 - 2019</p>
