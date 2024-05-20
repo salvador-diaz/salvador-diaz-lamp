@@ -1,0 +1,6 @@
+RewriteEngine On
+## If requested resource is not a file or directory...                                                                   
+RewriteCond %{REQUEST_FILENAME} !-f                                                                                     
+RewriteCond %{REQUEST_FILENAME} !-d                                                                                        
+# ...Then process through index.php                                                                                        
+RewriteRule ^ index.php [L]

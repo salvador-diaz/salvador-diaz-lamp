@@ -1,0 +1,156 @@
+html {
+    font-family: "Archivo Narrow", sans-serif;
+
+    h1 {
+        font-weight: 700;
+    }
+
+    h2 {font-weight: 500;} 
+
+    h3, h4, h5, h6 {
+        font-weight: 450;
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    a:hover { 
+        color: #FF621F;
+        transition: 0.5s;
+    }
+}
+
+body {
+    margin: 0px 0px 7rem 0px;
+}
+
+@media (max-width: 485px) {
+    html { 
+        font-size: 14px;
+    }
+}
+
+/* General css end */
+/* Orange welcome div begin */
+
+#orange-welcome-div img {
+    margin: 0px 30px 0px 100px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.title-and-links { 
+    padding: 20px 0px 0px 0px;
+}
+.title-and-links a {
+    color: white;
+    padding: 0px 10px;
+}
+.title-and-links a:hover { 
+    color: black;
+    transition: 0.6s;
+}
+.title-and-links h1 {
+    margin: 0px 0px 15px 0px;
+    font-size: 50px;
+}
+
+@media (max-width: 485px) { 
+    .title-and-links {
+        display: block;
+        padding: 15px 15px 20px 15px;
+    }
+    .title-and-links img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/** Orange welcome div end */
+/** Home content div begin */
+
+#home-content-div {
+    margin: 30px 120px 0px 120px;
+    padding 0px 0px 80px 0px;
+}
+    
+#home-content-div h1 { 
+    font-size: 40px;
+}
+#home-content-div h2 { 
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#home-content-div .homeOrangeButtons { 
+    display: flex;
+    gap: 10px;
+}
+
+#home-content-div hr {
+    border-top: 1px solid #FF621F;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#home-content-div ul{
+    padding-left: 30px;
+}
+
+@media (max-width: 485px) { 
+    #home-content-div {
+        margin: 30px 20px 0px 20px;
+    }
+    #home-content-div .homeOrangeButtons {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+}
+
+/* Home content div end */
+/* CV div start */
+
+#cv-div img {
+    display: block;
+}
+@media (max-width: 485px) {
+    #cv-div h2 { 
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* CV div end */
+/* Section div start */
+
+.section-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-div * {
+    li {
+      margin-bottom: 8px;
+    }
+    li:last-child { 
+      margin-bottom: 0px;
+    }
+
+    @media (max-width: 485px) {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        ul {
+            padding-left: 0px;
+            list-style-type: none;
+        }
+        li {
+          text-align: justify;
+      }
+    }
+}
