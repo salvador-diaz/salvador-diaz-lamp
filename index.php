@@ -7,6 +7,8 @@ require_once "src/Router.php";
 require_once "src/controllers/HomeController.php";
 require_once "src/controllers/MemesController.php";
 require_once "src/controllers/AuthController.php";
+require_once "src/controllers/PostsController.php";
+
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
@@ -19,6 +21,8 @@ $router = new Router();
 $router
     ->register("GET", "/", ["HomeController", "index"])
     ->register("GET", "/memes", ["MemesController", "index"])
+    ->register("GET", "/posts", ["PostsController", "index"])
+    ->register("GET", "/post", ["PostsController", "post"])
     ->register("GET", "/login", ["AuthController", "index"])
     ->register("GET", "/register", ["AuthController", "index"]);
 
