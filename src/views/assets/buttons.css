@@ -26,43 +26,44 @@
     border: 1px solid #e44400;
     transition: 0.5s;
     border-radius: 4px;
-    :hover { 
-        background-color: #e44400;
-        transition: 0.5s;
-    }
-    :active {
-        background-color: #fe8a58;
-        transition: 0.1s;
-    }
+}
+.small-orange-btn:hover { 
+    background-color: #e44400;
+    transition: 0.5s;
+}
+.small-orange-btn:active {
+    background-color: #fe8a58;
+    transition: 0.1s;
 }
 
 .smaller-orange-btn {
     transition: 0.5s;
     cursor: pointer;
     border: 1px solid #e44400;
-    /*
-    ${props => props.white ? `
-        background-color: white;
-        color: #FF621F;
-        :hover { 
-            background-color: #e8e8e8;
-            transition: 0.5s;
-        }
-        :active {
-            color: black;
-            transition: 0.1s;
-        }
-    `: `
-        background-color: #FF621F;
-        color: white;
-        :hover { 
-            background-color: #e44400;
-            transition: 0.5s;
-        }
-        :active {
-            background-color: #fe8a58;
-            transition: 0.1s;
-        }
-    `}
-    */
+    background-color: #FF621F;
+    color: white;
+}
+.smaller-orange-btn:hover { 
+    background-color: #e44400;
+    transition: 0.5s;
+}
+.smaller-orange-btn:active {
+    background-color: #fe8a58;
+    transition: 0.1s;
+}
+
+.smaller-white-btn {
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #e44400;
+    background-color: white;
+    color: #FF621F;
+}
+.smaller-white-btn:hover { 
+    background-color: #e8e8e8;
+    transition: 0.5s;
+}
+.smaller-white-btn:active {
+    color: black;
+    transition: 0.1s;
 }

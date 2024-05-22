@@ -1,7 +1,9 @@
 <html>
     <head>
+        <link rel="stylesheet" href="src/views/assets/general.css">
         <link rel="stylesheet" href="src/views/assets/home.css">
         <link rel="stylesheet" href="src/views/assets/buttons.css">
+        <link rel="stylesheet" href="src/views/assets/nav.css">
 
         <link rel="icon" type="image/png" href="src/storage/icon.png">
 
@@ -12,7 +14,16 @@
         <!-- -->
     </head>
     <body>
-
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/posts">Posts</a></li>
+                <!-- <li><Link to={'/memes'}>Memes</Link></li> -->
+                <!-- <li><Link to={'/my-sites'}>My Sites</Link></li> -->
+                <!-- {!logged && (<li><Link to={'/register'}>Sign up</Link></li>)} -->
+                <!-- {!logged && (<li><Link to={'/login'}>Login</Link></li>)} -->
+            </ul>
+        </nav>
         <div id="orange-welcome-div" style="display: flex; padding: 15px 0px 30px; background-color: #FF621F; color: white;">
             <div>
                 <img src="src/storage/me.jpg" alt='me' />

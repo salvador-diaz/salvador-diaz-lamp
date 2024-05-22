@@ -41,6 +41,8 @@ class Router {
         if (!$action) //TODO: página 404
             throw new Exception("La ruta no existe");
 
+        // TODO: resolver parámetros dinámicos ej: /posts/1, posts/2 etc
+
         // es una función
         if (is_callable($action)) {
             return $action();
