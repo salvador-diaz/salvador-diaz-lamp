@@ -21,12 +21,13 @@ class View {
 
         if (!file_exists(RUTA_VISTAS."/".$this->view.".php")) {
             // echo RUTA_VISTAS."/".$this->view.".php\n";
-            throw new Exception("vista no encontrada");
+            //throw new Exception("vista no encontrada");
+            header("Location: /");
         }
 
         include RUTA_VISTAS."/".$this->view.".php";
 
-        // Devuelve el contenido del buffer como string y lo limpia.
-        return (string)ob_get_contents();
+        // Devuelve el contenido del buffer como string
+        return (string)ob_get_clean();
     }
 }

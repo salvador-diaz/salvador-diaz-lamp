@@ -14,16 +14,7 @@
         <!-- -->
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/posts">Posts</a></li>
-                <!-- <li><Link to={'/memes'}>Memes</Link></li> -->
-                <!-- <li><Link to={'/my-sites'}>My Sites</Link></li> -->
-                <!-- {!logged && (<li><Link to={'/register'}>Sign up</Link></li>)} -->
-                <!-- {!logged && (<li><Link to={'/login'}>Login</Link></li>)} -->
-            </ul>
-        </nav>
+        <?php include RUTA_VISTAS."/components/nav.php"; ?>
         <div id="page-content-div">
             <h1>Posts</h1>
             <div id="posts-div">

@@ -38,8 +38,11 @@ class Router {
         $route = explode("?", $requestUri)[0];
 
         $action = $this->routes[$route][$method] ?? null;
-        if (!$action) //TODO: página 404
-            throw new Exception("La ruta no existe");
+        if (!$action) { //TODO: página 404
+            header("Location: /");
+            exit;
+            //throw new Exception("La ruta no existe");
+        }
 
         // TODO: resolver parámetros dinámicos ej: /posts/1, posts/2 etc
 
@@ -52,7 +55,7 @@ class Router {
         $controller = $action[0];
         $method = $action[1];
         if (class_exists($controller) && method_exists($controller, $method)) {
-            $controller = new $controller();
+            $controller = new $controller(new GoogleAuthService);
             return $controller->$method();
         }
 
