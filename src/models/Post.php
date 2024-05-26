@@ -29,7 +29,7 @@ class Post {
         return $this->db->query("SELECT * FROM post")->fetchAll(PDO::FETCH_OBJ);
     }
 
-    /** DEvuelve un solo psot */
+    /** DEvuelve un solo post */
     public function getOne($id) {
         $statement =  $this->db->prepare("SELECT * FROM post where id = (?)");
         $statement->execute([$id]);

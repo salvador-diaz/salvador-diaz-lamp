@@ -4,8 +4,21 @@ require_once "src/View.php";
 
 class HomeController {
 
-    public function index(): string {
-       $view = new View("home", ["param1" => "prueba"]); 
-       return $view->render();
+    private object $google_auth_service;
+
+    public function __construct(object $googleAuthService) {
+        $this->google_auth_service = $googleAuthService;
+    }
+
+    public function index() {
+
+        // Crear cliente
+        $client = $this->google_auth_service->getClient();
+
+        $view = new View("home", [
+            // renderizar botón de acceso
+            "authurl" => $client->createAuthUrl()
+         ]);
+        echo $view->render();
     }
 }

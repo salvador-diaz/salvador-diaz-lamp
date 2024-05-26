@@ -15,6 +15,7 @@
     padding: 1rem;
     background-color: #FF621F;
     color: white;
+    border-radius: 3px;
 }
 
 #posts-div div p {
