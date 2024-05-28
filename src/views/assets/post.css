@@ -3,6 +3,7 @@
 #page-content-div {
     padding: 30px 100px 80px 100px;
     background-color: #FDDDDD;
+    height: max-content;
 }
 
 #page-content-div h1 { margin-bottom: 8px;}

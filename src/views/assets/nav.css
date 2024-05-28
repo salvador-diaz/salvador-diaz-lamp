@@ -29,12 +29,33 @@ nav a:active {
     background-color: #FF621F;
     color: white;
 }
-nav ul {padding 0px}
 
 nav img {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+}
+#nav-user {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 0.2rem;
+}
+@media (max-width: 485px) { 
+    nav {
+        padding: 0;
+        margin: 1rem;
+    }
+    nav ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    nav ul li a {
+        font-size: 1.3rem;
+        padding: 0;
+    }
 }
 
 .google-sign-in-button {

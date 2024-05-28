@@ -43,7 +43,7 @@
 #page-content-div {
     padding: 30px 100px 80px 100px;
     background-color: #FDDDDD;
-    height: 100%;
+    height: max-content;
 }
 
 #page-content-div h1 {

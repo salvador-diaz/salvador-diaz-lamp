@@ -28,7 +28,7 @@ body {
 }
 
 @media (max-width: 485px) {
-    html { 
-        font-size: 14px;
+    div, p, span { 
+        font-size: 1.2rem;
     }
 }
